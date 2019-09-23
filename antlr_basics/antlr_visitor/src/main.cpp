@@ -5,6 +5,7 @@
 
 #include "CalculationLexer.h"
 #include "CalculationParser.h"
+#include "my_visitor.h"
 
 using std::cout;
 using std::endl;
@@ -32,5 +33,10 @@ int main(int argc, char* argv[]) {
 
     // 6. Try to parse one of the rules
     CalculationParser::ProgramContext *tree = parser.program();
+
     cout<<tree->toStringTree(&parser)<<endl;
+
+    MyVisitor my_visitor;
+
+    my_visitor.visitProgram(tree);
 }

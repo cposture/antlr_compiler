@@ -1,5 +1,5 @@
 
-// Generated from /home/luffichen/compiler/HelloCompiler/antlr_basics/Calculation.g4 by ANTLR 4.7.1
+// Generated from Calculation.g4 by ANTLR 4.7.2
 
 #pragma once
 
@@ -19,11 +19,29 @@ public:
   virtual void enterProgram(CalculationParser::ProgramContext * /*ctx*/) override { }
   virtual void exitProgram(CalculationParser::ProgramContext * /*ctx*/) override { }
 
-  virtual void enterStatement(CalculationParser::StatementContext * /*ctx*/) override { }
-  virtual void exitStatement(CalculationParser::StatementContext * /*ctx*/) override { }
+  virtual void enterPrint(CalculationParser::PrintContext * /*ctx*/) override { }
+  virtual void exitPrint(CalculationParser::PrintContext * /*ctx*/) override { }
 
-  virtual void enterExpression(CalculationParser::ExpressionContext * /*ctx*/) override { }
-  virtual void exitExpression(CalculationParser::ExpressionContext * /*ctx*/) override { }
+  virtual void enterAssignment(CalculationParser::AssignmentContext * /*ctx*/) override { }
+  virtual void exitAssignment(CalculationParser::AssignmentContext * /*ctx*/) override { }
+
+  virtual void enterBlank(CalculationParser::BlankContext * /*ctx*/) override { }
+  virtual void exitBlank(CalculationParser::BlankContext * /*ctx*/) override { }
+
+  virtual void enterResult(CalculationParser::ResultContext * /*ctx*/) override { }
+  virtual void exitResult(CalculationParser::ResultContext * /*ctx*/) override { }
+
+  virtual void enterParen(CalculationParser::ParenContext * /*ctx*/) override { }
+  virtual void exitParen(CalculationParser::ParenContext * /*ctx*/) override { }
+
+  virtual void enterIden(CalculationParser::IdenContext * /*ctx*/) override { }
+  virtual void exitIden(CalculationParser::IdenContext * /*ctx*/) override { }
+
+  virtual void enterAddSub(CalculationParser::AddSubContext * /*ctx*/) override { }
+  virtual void exitAddSub(CalculationParser::AddSubContext * /*ctx*/) override { }
+
+  virtual void enterMulDiv(CalculationParser::MulDivContext * /*ctx*/) override { }
+  virtual void exitMulDiv(CalculationParser::MulDivContext * /*ctx*/) override { }
 
 
   virtual void enterEveryRule(antlr4::ParserRuleContext * /*ctx*/) override { }

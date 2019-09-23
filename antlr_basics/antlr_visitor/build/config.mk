@@ -1,8 +1,8 @@
 # antlr c++ 运行时头文件目录
-INC_ANTLR_RUNTIME_DIR=/usr/local/include/antlr4-runtime
+INC_ANTLR_RUNTIME_DIR=../../antlr_runtime_cpp/include/antlr4-runtime
 
 # antlr c++ 运行时库文件目录
-LIB_ANTLR_RUNTIME_DIR=/usr/local/lib
+LIB_ANTLR_RUNTIME_DIR=../../antlr_runtime_cpp/lib
 
 INC=-I$(INC_ANTLR_RUNTIME_DIR)
 

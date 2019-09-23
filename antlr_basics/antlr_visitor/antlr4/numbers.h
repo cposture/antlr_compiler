@@ -1,5 +1,5 @@
 
-// Generated from /home/luffichen/compiler/HelloCompiler/antlr_basics/numbers.g4 by ANTLR 4.7.1
+// Generated from numbers.g4 by ANTLR 4.7.2
 
 #pragma once
 
@@ -12,7 +12,7 @@
 class  numbers : public antlr4::Lexer {
 public:
   enum {
-    Number = 1, Real = 2, Exponent = 3, Decimal = 4, Integer = 5, Digit = 6
+    Number = 1, Integer = 2, Digit = 3
   };
 
   numbers(antlr4::CharStream *input);

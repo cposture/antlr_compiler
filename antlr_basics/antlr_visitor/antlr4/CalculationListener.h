@@ -1,5 +1,5 @@
 
-// Generated from /home/luffichen/compiler/HelloCompiler/antlr_basics/Calculation.g4 by ANTLR 4.7.1
+// Generated from Calculation.g4 by ANTLR 4.7.2
 
 #pragma once
 
@@ -17,11 +17,29 @@ public:
   virtual void enterProgram(CalculationParser::ProgramContext *ctx) = 0;
   virtual void exitProgram(CalculationParser::ProgramContext *ctx) = 0;
 
-  virtual void enterStatement(CalculationParser::StatementContext *ctx) = 0;
-  virtual void exitStatement(CalculationParser::StatementContext *ctx) = 0;
+  virtual void enterPrint(CalculationParser::PrintContext *ctx) = 0;
+  virtual void exitPrint(CalculationParser::PrintContext *ctx) = 0;
 
-  virtual void enterExpression(CalculationParser::ExpressionContext *ctx) = 0;
-  virtual void exitExpression(CalculationParser::ExpressionContext *ctx) = 0;
+  virtual void enterAssignment(CalculationParser::AssignmentContext *ctx) = 0;
+  virtual void exitAssignment(CalculationParser::AssignmentContext *ctx) = 0;
+
+  virtual void enterBlank(CalculationParser::BlankContext *ctx) = 0;
+  virtual void exitBlank(CalculationParser::BlankContext *ctx) = 0;
+
+  virtual void enterResult(CalculationParser::ResultContext *ctx) = 0;
+  virtual void exitResult(CalculationParser::ResultContext *ctx) = 0;
+
+  virtual void enterParen(CalculationParser::ParenContext *ctx) = 0;
+  virtual void exitParen(CalculationParser::ParenContext *ctx) = 0;
+
+  virtual void enterIden(CalculationParser::IdenContext *ctx) = 0;
+  virtual void exitIden(CalculationParser::IdenContext *ctx) = 0;
+
+  virtual void enterAddSub(CalculationParser::AddSubContext *ctx) = 0;
+  virtual void exitAddSub(CalculationParser::AddSubContext *ctx) = 0;
+
+  virtual void enterMulDiv(CalculationParser::MulDivContext *ctx) = 0;
+  virtual void exitMulDiv(CalculationParser::MulDivContext *ctx) = 0;
 
 
 };

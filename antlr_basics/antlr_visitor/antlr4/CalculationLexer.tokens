@@ -9,11 +9,8 @@ IDENTIFIER=8
 NEWLINE=9
 SPACES=10
 Number=11
-Real=12
-Exponent=13
-Decimal=14
-Integer=15
-Digit=16
+Integer=12
+Digit=13
 '='=1
 '*'=2
 '/'=3

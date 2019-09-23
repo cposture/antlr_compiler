@@ -1,5 +1,5 @@
 
-// Generated from /home/luffichen/compiler/HelloCompiler/antlr_basics/Calculation.g4 by ANTLR 4.7.1
+// Generated from Calculation.g4 by ANTLR 4.7.2
 
 #pragma once
 
@@ -13,8 +13,8 @@ class  CalculationLexer : public antlr4::Lexer {
 public:
   enum {
     T__0 = 1, T__1 = 2, T__2 = 3, T__3 = 4, T__4 = 5, T__5 = 6, T__6 = 7, 
-    IDENTIFIER = 8, NEWLINE = 9, SPACES = 10, Number = 11, Real = 12, Exponent = 13, 
-    Decimal = 14, Integer = 15, Digit = 16
+    IDENTIFIER = 8, NEWLINE = 9, SPACES = 10, Number = 11, Integer = 12, 
+    Digit = 13
   };
 
   CalculationLexer(antlr4::CharStream *input);

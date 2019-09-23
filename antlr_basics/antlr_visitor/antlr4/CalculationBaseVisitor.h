@@ -1,5 +1,5 @@
 
-// Generated from /home/luffichen/compiler/HelloCompiler/antlr_basics/Calculation.g4 by ANTLR 4.7.1
+// Generated from Calculation.g4 by ANTLR 4.7.2
 
 #pragma once
 
@@ -19,11 +19,35 @@ public:
     return visitChildren(ctx);
   }
 
-  virtual antlrcpp::Any visitStatement(CalculationParser::StatementContext *ctx) override {
+  virtual antlrcpp::Any visitPrint(CalculationParser::PrintContext *ctx) override {
     return visitChildren(ctx);
   }
 
-  virtual antlrcpp::Any visitExpression(CalculationParser::ExpressionContext *ctx) override {
+  virtual antlrcpp::Any visitAssignment(CalculationParser::AssignmentContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual antlrcpp::Any visitBlank(CalculationParser::BlankContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual antlrcpp::Any visitResult(CalculationParser::ResultContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual antlrcpp::Any visitParen(CalculationParser::ParenContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual antlrcpp::Any visitIden(CalculationParser::IdenContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual antlrcpp::Any visitAddSub(CalculationParser::AddSubContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual antlrcpp::Any visitMulDiv(CalculationParser::MulDivContext *ctx) override {
     return visitChildren(ctx);
   }
 
